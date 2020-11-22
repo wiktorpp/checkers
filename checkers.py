@@ -37,5 +37,3 @@ def asciifyBoard(board):
     ret = ret[:-1]
     ret += "╝"
     return ret
-
-print(asciifyBoard(startBoard))
