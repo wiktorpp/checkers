@@ -10,8 +10,16 @@ startBoard = [
     [0, 2, 0, 2, 0, 2, 0, 2],
     [2, 0, 2, 0, 2, 0, 2, 0]
 ]
+board = startBoard
+aviableMovesPrompt = \
+"┌     ┐\n" + \
+" \   / \n" + \
+"  1 2  \n" + \
+"  4 3  \n" + \
+" /   \\\n" + \
+"└     ┘"
 
-def asciifyBoard(board):
+def asciifyBoard():
     ret = ""
     ret += "╔═╦═╦═╦═╦═╦═╦═╦═╗\n"
     for i in board:
@@ -37,3 +45,6 @@ def asciifyBoard(board):
     ret = ret[:-1]
     ret += "╝"
     return ret
+
+def move(x, y, direction):
+    pass
