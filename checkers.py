@@ -48,3 +48,16 @@ def asciifyBoard():
 
 def move(x, y, direction):
     pass
+
+def strToCoords(string):
+    if string[0].isupper() == True:
+        x = ord(string[0]) - 64
+    elif string[0].islower():
+        x = ord(string[0]) - 96
+    else:
+        raise Exception("Invalid coordinates")
+    y = int(string[1])
+    return [x, y]
+
+def coordsToStr(x, y):
+    return chr(65 + x) + str(y + 1)
